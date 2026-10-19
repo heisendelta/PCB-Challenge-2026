@@ -36,7 +36,7 @@ From my own experience, no matter how much you may like designing PCBs, ultimate
 1. **Logic Deduction**: deduce the digital logic function implemented by the provided schematic, purely from the schematic itself (no functional description is given). Deducing this will give you bonus points.
 2. **PCB Layout**: design a fully wired, single board PCB implementation of that logic, optimised for the smallest possible board area, within the design constraints below.
 
-This challenge will be running for 7 days, **until the midnight of October 19th.**
+This challenge will be running for 7 days, **until the midnight of October 19th. (The end of the 19th)**
 
 Make your **submission** here:
 https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=_oivH5ipW0yTySEKEdmlwtUrHdFLQS5OlbEozvc0DnlUMzJQWkFZVDhVRjZNVTlCQjhHQ0hDSUxSQi4u
@@ -67,7 +67,7 @@ The keep out zone of the ESP32 antenna does not have to cover any PCB area, it c
 - Only default KiCad footprints, or footprints explicitly provided as part of the challenge, may be used.
 - Footprints must not be modified from the library originals (this will be checked via KiCad's "footprint does not match library" DRC warning; note that editing a local copy of the library will not bypass this check, and manual review may also be used).
 - All footprints must have correctly defined courtyard layers (F.CrtYd / B.CrtYd), and courtyards must not overlap between components. This is enforced via KiCad's built in "courtyard overlap" DRC check.
-- Traces and vias may not be routed underneath IC footprints (i.e. within the courtyard area of any IC); given there is no shield underneath it. 
+- Traces and vias may not be routed underneath IC footprints (i.e. within the courtyard area of any IC); given there is no shield underneath it. This only applies if the IC and trace are on the same layer.
 
 ### Silkscreen
 - Boards do not need to retain fully legible silkscreen labelling. 
